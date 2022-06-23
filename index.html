@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="styles/index.css" />
+  </head>
+  <body>
+    <div class="main-body">
+      <div class="btn-area">
+        <div
+          id="btn1"
+          class="btn player-1-btn outer-effect btn-large"
+        >
+          <span
+            class="iconify ic-blue"
+            data-inline="false"
+            data-icon="gridicons:cross"
+            style="font-size: 45px"
+          ></span>
+          <span class="text-blue" id="player-1-name">Player 1</span>
+        </div>
+        <div class="btn btn-turn outer-effect btn-xsmall">
+          <img
+            id="turn"
+            class="iconify ic-blue"
+            data-inline="false"
+            src="icons/cross.svg"
+            style="font-size: 25px"
+          ></img>
+          <span class="text-blueRed">turn</span>
+        </div>
+        <div
+          id="btn2"
+          class="btn player-2-btn inner-effect btn-large"
+        >
+          <span
+            class="iconify ic-red"
+            data-inline="false"
+            data-icon="bi:circle"
+            style="font-size: 40px"
+          ></span>
+          <span class="text-red" id="player-2-name">Player 2</span>
+        </div>
+      </div>
+      <div class="board-area outer-effect">
+        <div class="board-cell" data-cell></div>
+        <div class="board-cell" data-cell></div>
+        <div class="board-cell" data-cell></div>
+        <div class="board-cell" data-cell></div>
+        <div class="board-cell" data-cell></div>
+        <div class="board-cell" data-cell></div>
+        <div class="board-cell" data-cell></div>
+        <div class="board-cell" data-cell></div>
+        <div class="board-cell" data-cell></div>
+      </div>
+      <div class="endscreen text-blueRed" id="end"></div>
+      <div class="exit-area">
+        <div class="btn btn-restart outer-effect btn-small" onclick="restart()">
+          <span
+            class="iconify ic-purple"
+            data-inline="false"
+            data-icon="carbon:restart"
+            style="font-size: 24px; color: #e407b4"
+          ></span>
+          <span class="text-blueRed">Restart</span>
+        </div>
+        <div class="btn btn-exit outer-effect btn-xsmall">
+          <span
+            class="iconify ic-purple"
+            data-inline="false"
+            data-icon="ion:exit-outline"
+            style="font-size: 24px; color: #e407b4"
+          ></span>
+          <span class="text-blueRed">Exit</span>
+        </div>
+      </div>
+    </div>
+    <script src="scripts/index.js"></script>
+    <script src="https://code.iconify.design/1/1.0.6/iconify.min.js"></script>
+  </body>
+</html>
